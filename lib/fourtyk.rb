@@ -1,16 +1,13 @@
 module Fourtyk
   def shorten_number
-    
     if self.is_a?(String)
       self.gsub!(/[a-zA-z$,]/,"")
-      num = self.to_i.round
-      string = num.to_s
-    else
-      num = self.to_i
-      string = num.to_s
     end
+    num = self.to_i
+    string = num.to_s
+    length = string.length
     
-    case string.length
+    case length
     when 4..6 
       label = "K"
       upper = 4
@@ -28,7 +25,7 @@ module Fourtyk
     end
     
     if label
-      first = string[0..string.length - upper].to_i
+      first = string[0..length - upper].to_i
       last = string[lower..lower+2].to_i * 0.001
       last = sprintf("%.1f", last).to_f
       num = first + last
@@ -44,10 +41,10 @@ module Fourtyk
   end
 end
 
-class Numeric
+class Numeric # :nodoc:
   include Fourtyk
 end
 
-class String
+class String # :nodoc:
   include Fourtyk
 end
