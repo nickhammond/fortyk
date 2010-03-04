@@ -1,6 +1,33 @@
 = fourtyk
 
-Description goes here.
+Take your long numbers and convert them to their shorter version.
+
+== Install
+
+  sudo gem install fourtyk
+  
+In your environment.rb file add
+
+  config.gem 'fourtyk'
+  
+== Usage
+
+You can convert any string or number into it's shortened version, just called shorten_number or shorten_money depending on what you want.
+
+  40000.shorten_number # 40K
+  40000.shorten_money # $40K
+  "40000".shorten_money $ $40K
+  1000.shorten_number # 1K
+  1500.shorten_number # 1.5K
+  
+shorten_money just prepends a "$" sign to the shortened number. If you want to use a different currency just pass in the symbol for it to the shorten_money method
+
+  "$3,500".shorten_money(:currency => "£")
+
+== TODO
+
+* Support precision options
+* Improve upon number parsing
 
 == Note on Patches/Pull Requests
  
@@ -15,3 +42,4 @@ Description goes here.
 == Copyright
 
 Copyright (c) 2010 Nick Hammond. See LICENSE for details.
+
