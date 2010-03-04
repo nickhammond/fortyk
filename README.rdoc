@@ -15,14 +15,17 @@ In your environment.rb file add
 You can convert any string or number into it's shortened version, just called shorten_number or shorten_money depending on what you want.
 
   40000.shorten_number # 40K
-  40000.shorten_money # $40K
+  "$1,000,000".shorten_money # $1M
   "40000".shorten_money $ $40K
   1000.shorten_number # 1K
   1500.shorten_number # 1.5K
+  "123,334,000,234".shorten_number # "123.3B"
   
 shorten_money just prepends a "$" sign to the shortened number. If you want to use a different currency just pass in the symbol for it to the shorten_money method
 
   "$3,500".shorten_money(:currency => "£")
+  
+See the tests and examples for more uses
 
 == TODO
 
