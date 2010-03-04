@@ -23,7 +23,10 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "fourtyk.gemspec",
+     "lib/TODO",
      "lib/fourtyk.rb",
+     "test/examples.rb",
      "test/helper.rb",
      "test/test_fourtyk.rb"
   ]
@@ -33,7 +36,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.6}
   s.summary = %q{Shortens long numbers. i.e. 40000 => 40K}
   s.test_files = [
-    "test/helper.rb",
+    "test/examples.rb",
+     "test/helper.rb",
      "test/test_fourtyk.rb"
   ]
 
