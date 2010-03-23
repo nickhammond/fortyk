@@ -1,14 +1,14 @@
-= fourtyk
+= fortyk
 
 Take your long numbers and convert them to their shorter version.
 
 == Install
 
-  sudo gem install fourtyk
+  sudo gem install fortyk
   
 In your environment.rb file add
 
-  config.gem 'fourtyk'
+  config.gem 'fortyk'
   
 == Usage
 

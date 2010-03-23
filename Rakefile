@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "fourtyk"
+    gem.name = "fortyk"
     gem.summary = %Q{Shortens long numbers. i.e. 40000 => 40K}
     gem.description = %Q{Converts long numbers to their shorter form}
-    gem.email = "nrhammond@gmail.com"
-    gem.homepage = "http://github.com/nrhammond/fourtyk"
+    gem.email = "nick@nickhammond.com"
+    gem.homepage = "http://github.com/nrhammond/fortyk"
     gem.authors = ["Nick Hammond"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
@@ -47,7 +47,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "fourtyk #{version}"
+  rdoc.title = "fortyk #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

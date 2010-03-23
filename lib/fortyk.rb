@@ -1,4 +1,4 @@
-module Fourtyk
+module Fortyk
   def shorten_number
     if self.is_a?(String)
       self.gsub!(/[a-zA-z$,]/,"")
@@ -42,9 +42,9 @@ module Fourtyk
 end
 
 class Numeric # :nodoc:
-  include Fourtyk
+  include Fortyk
 end
 
 class String # :nodoc:
-  include Fourtyk
+  include Fortyk
 end

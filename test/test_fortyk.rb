@@ -1,6 +1,6 @@
 require 'helper'
 
-class TestFourtyk < Test::Unit::TestCase
+class TestFortyk < Test::Unit::TestCase
   context "default shorten number examples" do
     EXAMPLES.each do |example|
       should "convert #{example[0]} to #{example[1]}" do
